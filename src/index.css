@@ -293,7 +293,7 @@ body {
   padding: 5rem;
 }
 .img-container {
-  display: none;
+  margin-top: 2rem;
 }
 .hero-center {
   width: 90vw;

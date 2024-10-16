@@ -8,14 +8,13 @@ const Hero = () => {
         <div className='hero-title'>
           <h1>Contentful CMS</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-            vitae fugit modi, quasi animi molestias adipisci exercitationem
-            dignissimos, qui voluptatem ex! Dolorum, reprehenderit sunt. A,
-            temporibus!
+            I love working with CMS........ <br /> So I decided to do this small
+            piece with CMS <br /> My love for CMS begun when I worked with DATO
+            CMS and it was beautiful{" "}
           </p>
         </div>
         <div className='img-container'>
-          <img src={imageHero} alt='woman and browser' />
+          <img src={imageHero} alt='woman and browser' className='img' />
         </div>
       </div>
     </section>
