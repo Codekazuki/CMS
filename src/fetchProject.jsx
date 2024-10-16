@@ -15,10 +15,9 @@ export const useFetchProject = () => {
     try {
       const response = await client.getEntries({ content_type: "project" });
       const projects = response.items.map((item) => {
-        const { title, url, image } = item.fields;
+        const { title, url, images } = item.fields;
         const id = item.sys.id;
-        const img = image?.fields?.file?.url;
-
+        const img = images?.fields?.file?.url;
         return { title, url, id, img };
       });
       setProjects(projects);

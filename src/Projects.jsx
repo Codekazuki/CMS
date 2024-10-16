@@ -18,7 +18,7 @@ const Projects = () => {
       <div className='projects-center'>
         {projects.map((project) => {
           const { id, img, title, url } = project;
-          console.log(img);
+
           return (
             <a
               key={id}
