@@ -18,6 +18,7 @@ export const useFetchProject = () => {
         const { title, url, image } = item.fields;
         const id = item.sys.id;
         const img = image?.fields?.file?.url;
+
         return { title, url, id, img };
       });
       setProjects(projects);

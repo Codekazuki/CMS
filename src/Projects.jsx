@@ -18,15 +18,16 @@ const Projects = () => {
       <div className='projects-center'>
         {projects.map((project) => {
           const { id, img, title, url } = project;
+          console.log(img);
           return (
             <a
+              key={id}
+              href={url}
               target='_blank'
               rel='noreferrer'
               className='project'
-              href={url}
-              key={id}
             >
-              <img alt={title} className='img' />
+              <img src={img} alt={title} className='img' />
               <h5>{title}</h5>
             </a>
           );
