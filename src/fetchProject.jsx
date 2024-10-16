@@ -7,7 +7,7 @@ const client = createClient({
   accessToken: "GU_2EwIBH0LaMmU0_ffqbUXKTA9VyigR-LM_TzBs0VY",
 });
 
-const useFetchProject = () => {
+export const useFetchProject = () => {
   const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState([]);
 
@@ -31,4 +31,5 @@ const useFetchProject = () => {
   useEffect(() => {
     getData();
   }, []);
+  return { loading, projects };
 };
